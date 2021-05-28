@@ -1,6 +1,8 @@
 #!/bin/bash
 
+nmcli c add -type ethernet con-name enp0s8 ifname enp0s8
 
+nmcli c add type ethernet con-name enp0s8 ifname enp0s8 ipv4.address 192.168.56.2/24 ipv4.method static
 
 
 lsblk -S               list all HD info
